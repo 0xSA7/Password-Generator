@@ -17,11 +17,11 @@ public class Code extends JFrame implements ActionListener {
         this.setSize(400, 300);                                 //diminutions of the app window
         Image image = new ImageIcon(Objects.requireNonNull(this.getClass().getResource("icon.png"))).getImage(); //decelerate app icon
         this.setIconImage(image);                                                          // use it
-        enterButton = new JButton("Generate");                                        //name of the button
-        enterButton.addActionListener(this);                                           //action of the button
-        entryLabel = new JLabel("Enter number of digits for your password");        //name of the entry label
-        passwordLabel = new JLabel("");                                            //initialisation of password
-        out = new JLabel("Your Password is: ");                                   // name of the label
+        enterButton = new JButton("Generate");                                            //name of the button
+        enterButton.addActionListener(this);                                             //action of the button
+        entryLabel = new JLabel("Enter number of digits for your password");            //name of the entry label
+        passwordLabel = new JLabel("");                                                //initialisation of password
+        out = new JLabel("Your Password is: ");                                       // name of the label
         passwordLengthInput = new JTextField("");                                    //empty text filed for user to write rhe digits
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                        // when the user hit Close icon what should happen
         this.setVisible(true);                                                     // making the app visible for user
@@ -33,13 +33,13 @@ public class Code extends JFrame implements ActionListener {
         this.add(passwordLengthInput);                                       // adding the Text failed to the visible app
         this.add(passwordLabel);                                            // adding the label to the visible app
         this.setLocationRelativeTo(null);                                  // When you run it the app window will appear at the center of the screen
-        entryLabel.setBounds(10, 10, 350, 50);           // setting the location of the label
-        enterButton.setBounds(250, 60, 100, 30);        // setting the location of the button
-        passwordLengthInput.setBounds(10, 50, 230, 50);// setting the location of the Text field
-        out.setBounds(10, 100, 150, 20);              // setting the location of the label
-        passwordLabel.setBounds(5, 120, 385, 142);   // setting the location of the label
-        passwordLengthInput.setBackground(Color.CYAN);                // setting the background of the label
-        passwordLabel.setBackground(Color.GRAY);                     // setting the location of the label
+        entryLabel.setBounds(10, 10, 350, 50);                            // setting the location of the label
+        enterButton.setBounds(250, 60, 100, 30);                         // setting the location of the button
+        passwordLengthInput.setBounds(10, 50, 230, 50);                 // setting the location of the Text field
+        out.setBounds(10, 100, 150, 20);                               // setting the location of the label
+        passwordLabel.setBounds(5, 120, 385, 142);                    // setting the location of the label
+        passwordLengthInput.setBackground(Color.CYAN);               // setting the background of the label
+        passwordLabel.setBackground(Color.GRAY);                    // setting the location of the label
     }
 
     public char[] getPassword() {                                     //in this method we generate the password as a char[]
