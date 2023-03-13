@@ -92,3 +92,9 @@ public class Code extends JFrame implements ActionListener {
     }
 
 }
+public class Main {
+
+    public static void main(String[]args){
+        new Code();
+    }
+    }
